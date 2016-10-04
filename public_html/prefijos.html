@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function darPrefijo(prefijo) {
+                opener.document.formulario.prefijo.value=prefijo;
+                window.close();
+            }
+        </script>
+    </head>
+    <body>
+        <div><b>Lista de prefijos internacionales</b></div><br>
+        <form name="prefijos">            
+            <div>España<button value="+34" onclick="darPrefijo('+34')">+34</button></div><br>
+            <div>Holanda<button value="+31" onclick="darPrefijo('+31')">+31</button></div><br>
+            <div>Francia<button value="+44" onclick="darPrefijo('+44')">+44</button></div><br>
+            <div>Italia<button value="+36" onclick="darPrefijo('+36')">+36</button></div><br>
+        </form>
+
+
+    </body>
+</html>
